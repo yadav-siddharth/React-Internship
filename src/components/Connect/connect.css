@@ -1,0 +1,90 @@
+.connect{
+          margin-top:  7rem;
+}
+
+.connect h2{
+          font-size: 3rem;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #222529;
+          animation-duration: 1s;
+          animation-name: Header;
+          
+}
+
+@keyframes Header {
+          from{
+                    margin-left: -100%;
+          }to{
+                    margin-left: 10%;
+          }
+          
+}
+
+.connect-header{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+}
+
+.connect-header span{
+          font-size: 2rem;
+          color: rgb(119, 120, 122);
+}
+
+.connect-icon{
+          display: grid;
+          max-width: 500px;
+          grid-template-columns: repeat(2,1fr);
+          margin: auto;
+          gap: 10px;
+          padding: 1rem;
+}
+
+.connect-mail , .connect-phone{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #FFFFFF;
+          padding: 0.5rem;
+          border: #08182b 2px solid;
+          border-radius: 12px;
+          color: #08182b;
+          animation-duration: 2s;
+          animation-name: Icon;
+}
+@keyframes Icon {
+          from{
+                    margin-left: -100%;
+          }to{
+                    margin-left: 10%;
+          }
+          
+}
+
+.connect-mail{
+          background-color: #222529;
+          color: #FFFFFF;
+}
+
+@media screen and (max-width:640px) {
+          .connect h3{
+                    margin-left: 0;
+                    padding: 1rem;
+                    margin: auto;
+                    font-size: 1rem;
+          }
+
+          .connect h2{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+          }
+
+          .connect-header span{
+                    font-size: 1rem;
+          };
+
+}

@@ -1,0 +1,263 @@
+.hero{
+          width: 100%;
+          height: 629px;
+          flex-shrink: 0;
+          background: #6D38FC;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          display: grid;
+          grid-template-columns:repeat(2,1fr);
+          grid-gap:5px;
+          margin:4rem 0;
+}
+
+.user{
+          display: flex;
+          margin: 2rem;
+          max-width: 500px;
+          justify-content: space-around;
+          font-size: 0.8rem;
+          color:#FFFFFF;
+          animation-duration: 1s;
+          animation-name: Slidein;
+}
+@keyframes Slidein {
+          from{
+                    margin-left: -100%;
+          }
+          to{
+                    margin-left: 10%;
+          }  
+}                  
+
+.student , .employeer, .company{
+          width: 150px;
+          background-color:#08182b;
+          padding: 1rem;
+          font-weight: 600;
+          border-radius: 12px;
+          cursor: pointer;
+}
+
+
+
+
+.left{
+          height:100%;
+          max-width:100%;
+          display:flex;
+          flex-direction: column;
+          padding: 1rem;
+          
+          
+}
+
+.content{
+          margin: auto;
+}
+
+h1 {
+          font-size: 3.8rem;
+          font-weight: 600;
+          padding: 1.6rem, 2.5rem;
+          color: #eaeaed;
+          font-family:  'Poppins', sans-serif;
+}
+
+p{
+          padding: 0.5rem;
+          color:#aeb1b5;
+          font-size: 1rem;
+          font-weight: 400;
+          font-family:  'Poppins', sans-serif;
+}
+
+.btn{
+          padding: 12px 32px;
+          font-size: 1rem;
+          text-transform: uppercase;
+          background-color:#B5F432;
+          color: #08182b;
+          font-weight: 600;
+          cursor:pointer;
+          border: #08182b 1px solid;
+          top:50%;
+          border-radius: 40px;
+                  
+}
+        
+        
+        
+.button{
+          margin-top: 1.5rem;
+          margin-left: 70px;
+}
+         
+        
+.btn:hover{
+          background-color:#B5F432;
+          color: #fff;
+          transition: 0.3s;
+}
+
+.right{
+          height: 100%;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          margin: auto;
+          
+}
+
+.photo-section{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-gap:5px;
+          
+}
+
+.stud2-content{
+          margin-top: 100px;
+          width: 300px;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height:50px;
+          margin-left: 20px;
+          background-color: #eaeaed;
+          border-radius: 12px;
+          font-weight: 600;
+          font-family:  'Poppins', sans-serif;
+          animation-duration: 1s;
+          animation-name:Right;
+}
+@keyframes Right {
+          from{
+                    margin-left: -100%;
+          }
+          to{
+                    margin-right: 10%;
+          }  
+} 
+
+.stud1-content{
+          width: 300px;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height:150px;
+          background-color: #eaeaed;
+          border-radius: 12px;
+          font-weight: 600;
+          font-family:  'Poppins', sans-serif;
+          animation-duration: 1s;
+          animation-name:Content;
+}
+
+@keyframes Content {
+          from{
+                    margin-left: -100%;
+          }
+          to{
+                    margin-left: 10%;
+          }  
+} 
+          
+
+
+.photo-content1, .photo-content2{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 5px;
+}
+
+span{
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+}
+
+.photo-stud1{
+          margin-top: 20px;
+          width: 300px;
+          height: 300px;
+          border-radius: 70px 20px  34px 10px;
+          border: #eaeaed 8px solid;
+}
+
+.photo-stud2{
+          margin-top: 150px;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          border: #eaeaed 5px solid;
+          
+}
+
+@media screen and ( max-width:640px ){
+          .hero{
+                    grid-template-columns: 1fr;
+                    height: 685px;
+                    width: 100%;
+          }
+          .user{
+                    margin: 0;
+                    margin-top: 20px;
+                    gap: 5px;
+                    max-width: 350px;
+                    font-size: 0.6rem;
+          }
+
+          .content{
+                    margin-top: 40px;
+          }
+
+          h1{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin: auto;
+          }
+
+          p{
+                    font-size: 0.8rem;
+          }
+
+          .par{
+                    display: none;
+
+          }
+
+          .btn{
+                    font-size: 0.8rem;
+          }
+
+          .photo-stud1{
+                    width: 150px;
+                    height: 150px;
+                    
+          }
+          .photo-stud2{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin: 0;
+                    margin-left: 10px;
+          }
+
+          .stud1-content{
+                    width: 180px;
+                    font-size: 0.5rem;
+                    height: 100px;
+
+          }
+
+          .stud2-content{
+                    width: 170px;
+                    font-size: 0.6rem;
+                    margin: 0;
+                    margin-top: 70px;
+          }
+          
+}

@@ -1,0 +1,79 @@
+.location-bg{
+         display: grid;
+         justify-content: center;
+         align-items:center;
+         padding: 2rem;
+         background-color: #A0BFE0;        
+
+}
+
+.l-h2{
+          font-size: 3rem;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          padding: 2rem;
+          animation-duration: 3s ;
+          animation-name: Find;
+}
+@keyframes Find {
+          from{
+                    margin-bottom: -100%;
+          }to{
+                    margin-bottom: 10%;
+          }
+          
+}
+
+.location-item{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-gap:10px;
+}
+
+.loc-img{
+          width: 250px;
+          height: 150px;
+          border: #ffff 5px solid;
+}
+
+.l-item{
+          background-color: #ffff;
+          display: flex;
+          border-radius: 12px;
+          transition: 1s;
+          
+}
+
+.l-item:hover{
+          transform: scale(1.2);
+          z-index: 2;
+}
+
+.l-item span{
+          padding: 1rem;
+          margin: auto;
+          font-weight: 600;
+}
+
+@media screen and (max-width:640px){
+          .location-item{
+                    grid-template-columns: 1fr;
+          }
+
+          .l-h2{
+                    font-size: 1.5rem;
+                    padding: 2rem;
+
+          }
+
+          .loc-img{
+                    width: 200px;
+                    height: 150px;
+          }
+
+          .l-item span{
+                    font-size: 0.8rem;
+          }
+}
